@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import ItemTodoScreen from "./components/ItemTodoScreen";
 import MainTodoScreen from "./components/TodosFolder/MainTodoScreen";
+import ItemTodoScreen from "./components/ItemTodos/ItemTodoScreen"
 
 const TodosApp = () => {
     return (

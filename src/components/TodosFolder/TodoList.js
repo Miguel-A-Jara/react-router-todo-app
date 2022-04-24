@@ -1,15 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import TodoCard from "./TodoCard";
+import TodoCard from "./TodoCard/TodoCard";
 
 const TodoList = () => {
     const todos = useSelector((state) => state.todos.value);
 
     return (
-        <div className="w-1/2 min-h-screen">
-            <ul>
-                {todos.map((todo) => <TodoCard todo={todo} />)}
+        <div className="w-1/2">
+            <ul className="h-screen overflow-y-scroll">
+                {todos.map((todo) => <TodoCard todo={todo} key={todo.id}/>)}
             </ul>
         </div>
     );
