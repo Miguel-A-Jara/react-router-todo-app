@@ -7,8 +7,8 @@ const TodosApp = () => {
     return (
         <>
             <Routes>
-                <Route path="/" element={<MainTodoScreen />} />
-                <Route path="/todo:todoId" element={<ItemTodoScreen />} />
+                <Route path="" element={<MainTodoScreen />} />
+                <Route path="todo:todoId" element={<ItemTodoScreen />} />
             </Routes>
         </>
     );
