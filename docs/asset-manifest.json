@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.26f451e0.css",
-    "main.js": "/static/js/main.7ed84216.js",
-    "index.html": "/index.html",
-    "main.26f451e0.css.map": "/static/css/main.26f451e0.css.map",
-    "main.7ed84216.js.map": "/static/js/main.7ed84216.js.map"
+    "main.css": "/Miguel-A-Jara/react-router-todo-app/static/css/main.26f451e0.css",
+    "main.js": "/Miguel-A-Jara/react-router-todo-app/static/js/main.fdf8780f.js",
+    "index.html": "/Miguel-A-Jara/react-router-todo-app/index.html",
+    "main.26f451e0.css.map": "/Miguel-A-Jara/react-router-todo-app/static/css/main.26f451e0.css.map",
+    "main.fdf8780f.js.map": "/Miguel-A-Jara/react-router-todo-app/static/js/main.fdf8780f.js.map"
   },
   "entrypoints": [
     "static/css/main.26f451e0.css",
-    "static/js/main.7ed84216.js"
+    "static/js/main.fdf8780f.js"
   ]
 }
