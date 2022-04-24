@@ -7,7 +7,7 @@ import TodoCardParagraph from "./TodoCardParagraph";
 
 const TodoCard = ({ todo }) => {
     return (
-        <li className="bg-stone-800 p-4 text-white flex flex-wrap animate__animated animate__fadeIn">
+        <li className="bg-stone-800 p-4 text-white flex flex-wrap justify-center animate__animated animate__fadeIn">
             <TodoTitle todo={todo} />
             <TodoCardSymbol todo={todo} />
 

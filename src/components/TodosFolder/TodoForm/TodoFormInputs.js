@@ -10,12 +10,12 @@ const TodoFormInputs = ({ handleSubmitForm, todoForm, setTodoForm, formVal }) =>
                 className="flex flex-col justify-center items-center gap-4 h-1/2 bg-red-400/25 rounded-b-2xl p-4"
             >
                 <input
-                    type="text" value={todoForm.todoTitle} placeholder="Title" className="form-input lg:font-bold" maxlength="25"
+                    type="text" value={todoForm.todoTitle} placeholder="Title" className="form-input lg:font-bold" maxLength="25"
                     onChange={(e) =>
                         setTodoForm({ ...todoForm, todoTitle: e.target.value })}
                 />
                 <textarea
-                    value={todoForm.todoDescri} placeholder="Description" className="form-input text-center lg:font-bold" maxlength="200"
+                    value={todoForm.todoDescri} placeholder="Description" className="form-input text-center lg:font-bold" maxLength="200"
                     onChange={(e) =>
                         setTodoForm({ ...todoForm, todoDescri: e.target.value })}
                 />

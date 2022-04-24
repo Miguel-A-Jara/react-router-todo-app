@@ -22,7 +22,7 @@ const UpdateDate = ({todo}) => {
         <>
             <input 
                 type="date" 
-                className="form-input text-center"
+                className="form-input text-center w-2/4"
                 value={date.date}
                 onChange={handleDateChange}
             />

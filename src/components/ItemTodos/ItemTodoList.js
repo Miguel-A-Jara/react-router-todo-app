@@ -4,7 +4,7 @@ import TodoDoneSymbol from "../TodosFolder/TodoDoneSymbol";
 
 const ItemTodoList = ({ todos }) => {
     return (
-        <ul className="w-1/4 h-3/4 bg-stone-900 overflow-y-auto p-8 flex flex-col gap-4">
+        <ul className="w-1/4 h-3/4 bg-stone-900 overflow-y-auto p-8 hidden lg:flex flex-col gap-4">
             {todos.map((todo) => (
                 <NavLink
                     key={todo.id}

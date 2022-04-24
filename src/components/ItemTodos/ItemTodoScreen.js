@@ -14,12 +14,13 @@ const ItemTodoScreen = () => {
     const todo = todos.find(element => element.id === state.todo.id )
 
     return (
-        <div className="w-screen h-screen bg-stone-900 flex flex-col flex-wrap p-12">
-            <div className="w-1/4 h-1/4 flex justify-center items-center">
+        <div className="w-screen min-h-screen lg:h-screen bg-stone-900 flex lg:flex-col gap-4 lg:gap-0 flex-wrap p-6 lg:p-12">
+            <div className="w-full lg:w-1/4 lg:h-1/4 flex justify-center items-center">
                 <Link
                     to="/"
-                    className="bg-red-500 hover:bg-white text-white hover:text-red-500 px-8 py-4 rounded-3xl text-2xl font-bold 
-                    flex justify-around items-center animate-pulse transition-all duration-300 hover:animate-none"
+                    className="bg-red-500 hover:bg-white text-white hover:text-red-500 px-4 lg:px-8 py-2 lg:py-4 
+                    rounded-3xl text-lg lg:text-2xl font-bold flex justify-around items-center animate-pulse 
+                    transition-all duration-300 hover:animate-none"
                 >
                     <IoMdArrowRoundBack />
                     Back
