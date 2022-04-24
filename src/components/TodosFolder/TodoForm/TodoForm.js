@@ -27,8 +27,8 @@ const TodoForm = () => {
     };
 
     return (
-        <div className="w-1/2 min-h-screen p-4">
-            <h2 className="bg-red-500 text-center text-7xl font-bold text-white py-2 rounded-t-2xl">
+        <div className="w-full md:w-3/4 lg:w-1/2 order-1 lg:order-2 h-fit lg:min-h-screen p-4 mx-auto">
+            <h2 className="bg-red-500 text-center text-xl lg:text-7xl font-bold text-white py-2 rounded-t-2xl">
                 Add New Todos
             </h2>
             

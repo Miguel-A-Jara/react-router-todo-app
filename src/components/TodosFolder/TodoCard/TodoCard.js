@@ -12,7 +12,7 @@ const TodoCard = ({ todo }) => {
             <TodoCardSymbol todo={todo} />
 
             <TodoCardParagraph todo={todo} />
-            <div className="w-1/4 flex flex-col justify-around items-center bg-black/50 rounded-br-2xl">
+            <div className="w-1/4 flex flex-col gap-4 justify-around items-center bg-black/50 rounded-br-2xl py-4">
                 <DeleteTodoButton todo={todo} />
                 <UpdateTodoButton todo={todo} />
             </div>

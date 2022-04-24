@@ -5,7 +5,8 @@
 /*  Complete Todo Button  */
 @layer components {
     .todo-status-btn {
-        @apply h-8 w-16 rounded-3xl transition-all duration-500 relative flex items-center overflow-hidden border-2 border-white;
+        @apply h-6 lg:h-8 w-12 lg:w-16 rounded-3xl transition-all duration-500 relative flex items-center overflow-hidden 
+        border-2 border-white;
     }
     .todo-status-btn::before {
         content: "";
@@ -21,7 +22,7 @@
     }
 
     .form-input {
-        @apply px-4 py-2 rounded-3xl w-1/2 resize-none focus:outline focus:outline-red-500 
+        @apply px-4 py-2 rounded-lg lg:rounded-3xl text-sm lg:text-lg w-full lg:w-1/2 resize-none focus:outline focus:outline-red-500 
         bg-white focus:bg-red-600 transition-all duration-100 text-red-600 focus:text-white;
     }
 
