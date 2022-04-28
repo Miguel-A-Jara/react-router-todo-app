@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const ItemTodoParagraph = ({ todo }) => {
     return (
@@ -12,6 +13,10 @@ const ItemTodoParagraph = ({ todo }) => {
             </small>
         </p>
     );
+};
+
+ItemTodoParagraph.propTypes = {
+    todo: PropTypes.object.isRequired
 };
 
 export default ItemTodoParagraph;
