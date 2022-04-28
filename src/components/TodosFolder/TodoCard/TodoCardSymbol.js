@@ -6,13 +6,15 @@ const TodoCardSymbol = ({todo}) => {
         <div
             className={
                 `${todo.done 
-                    ? "bg-green-600/25" 
-                    : "bg-red-700/25"
+                    ? "bg-green-600 shadow-xl shadow-green-600/60" 
+                    : "bg-red-600 shadow-xl shadow-red-600/60"
                 } 
                 w-1/4 flex justify-center items-center text-2xl md:text-3xl lg:text-4xl rounded-tr-2xl 
-                peer-hover:bg-stone-900 transition-all duration-300 border-b-2 border-zinc-700`}
+                peer-hover:bg-indigo-500 peer-hover:shadow-indigo-500 transition-all duration-500 border-b-2 border-white`}
         >
-            <TodoDoneSymbol todo={todo} />
+            <small className="bg-white rounded-full p-1">
+                <TodoDoneSymbol todo={todo} />
+            </small>
         </div>
     );
 };

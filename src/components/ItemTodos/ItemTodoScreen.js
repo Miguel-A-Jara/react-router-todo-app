@@ -1,9 +1,9 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import { Link, useLocation } from "react-router-dom";
-import ItemTodo from "./ItemTodo";
-import ItemTodoList from "./ItemTodoList";
-import { IoMdArrowRoundBack } from "react-icons/io";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { Link, useLocation } from 'react-router-dom';
+import ItemTodo from './ItemTodo';
+import ItemTodoList from './ItemTodoList';
+import { IoMdArrowRoundBack } from 'react-icons/io';
 
 const ItemTodoScreen = () => {
     const { state } = useLocation();
@@ -11,7 +11,7 @@ const ItemTodoScreen = () => {
 
     /*  We get the 'todo' object from the useSelector (redux) so we can update its values, 
     ( the 'state' that we get from useLocation() does not update  */
-    const todo = todos.find(element => element.id === state.todo.id )
+    const todo = todos.find((element) => element.id === state.todo.id);
 
     return (
         <div className="w-screen min-h-screen lg:h-screen bg-stone-900 flex lg:flex-col gap-4 lg:gap-0 flex-wrap p-6 lg:p-12">
@@ -27,7 +27,7 @@ const ItemTodoScreen = () => {
                 </Link>
             </div>
             <ItemTodoList todos={todos} />
-            <ItemTodo todo={todo} /> 
+            <ItemTodo todo={todo} />
         </div>
     );
 };

@@ -22,7 +22,13 @@
     }
 
     .form-input {
-        @apply px-1 lg:px-4 py-2 rounded-lg lg:rounded-3xl text-sm lg:text-lg w-full lg:w-1/2 resize-none focus:outline focus:outline-red-500 bg-white focus:bg-red-600 transition-all duration-100 text-red-600 focus:text-white;
+        @apply px-1 lg:px-4 py-2 rounded-sm lg:rounded-lg text-sm lg:text-lg w-full lg:w-1/2 resize-none 
+        focus:outline border-indigo-500 outline outline-indigo-500 focus:outline-white bg-white focus:bg-indigo-600 
+        transition-all duration-500 text-indigo-500 focus:text-white shadow-xl shadow-indigo-500/50;
+    }
+
+    .form-label {
+        @apply text-white font-normal text-2xl mt-4 rounded-md w-1/2 hover:cursor-pointer;
     }
 
     .navlink-list {
