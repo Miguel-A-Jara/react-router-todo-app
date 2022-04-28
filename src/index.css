@@ -8,23 +8,11 @@
         @apply h-6 lg:h-8 w-12 lg:w-16 rounded-3xl transition-all duration-500 relative flex items-center overflow-hidden 
         border-2 border-white;
     }
-    .todo-status-btn::before {
-        content: "";
-        position: absolute;
-        background: white;
-        height: 100%;
-        aspect-ratio: 1 / 1;
-        border-radius: 100%;
-        transition: all 500ms ease-in-out;
-    }
-    .todo-status-btn:hover::before {
-        background: rgba(255, 255, 255, 0.7);
-    }
 
     .form-input {
         @apply px-1 lg:px-4 py-2 rounded-sm lg:rounded-lg text-sm lg:text-lg w-full lg:w-1/2 resize-none 
         focus:outline border-indigo-500 outline outline-indigo-500 focus:outline-white bg-white focus:bg-indigo-600 
-        transition-all duration-500 text-indigo-500 focus:text-white shadow-xl shadow-indigo-500/50;
+        transition-all duration-500 text-indigo-500 focus:text-white shadow-xl shadow-indigo-500/50 filter-none;
     }
 
     .form-label {
@@ -32,11 +20,11 @@
     }
 
     .navlink-list {
-        @apply bg-red-500 p-4 rounded-3xl font-bold text-white text-2xl flex items-center;
+        @apply bg-red-500 p-4 rounded-3xl font-bold text-white text-2xl flex items-center drop-shadow-xl;
     }
 
     .active-navlink-list {
-        @apply animate-pulse bg-white text-black;
+        @apply animate-pulse bg-indigo-500 shadow-lg shadow-indigo-500 outline outline-white filter-none;
     }
 
     

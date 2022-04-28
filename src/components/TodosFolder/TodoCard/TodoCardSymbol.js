@@ -10,7 +10,7 @@ const TodoCardSymbol = ({todo}) => {
                     : "bg-red-600 shadow-xl shadow-red-600/60"
                 } 
                 w-1/4 flex justify-center items-center text-2xl md:text-3xl lg:text-4xl rounded-tr-2xl 
-                peer-hover:bg-indigo-500 peer-hover:shadow-indigo-500 transition-all duration-500 border-b-2 border-white`}
+                peer-hover:bg-blue-500 peer-hover:shadow-blue-500 transition-all duration-500 border-b-2 border-white`}
         >
             <small className="bg-white rounded-full p-1">
                 <TodoDoneSymbol todo={todo} />

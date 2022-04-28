@@ -4,7 +4,7 @@ import TodoDoneSymbol from '../TodosFolder/TodoDoneSymbol';
 
 const ItemTodoList = ({ todos }) => {
     return (
-        <ul className="w-1/4 h-3/4 bg-stone-900 overflow-y-auto p-8 hidden lg:flex flex-col gap-4">
+        <ul className="w-1/4 h-3/4 bg-white/25 overflow-y-auto p-8 hidden lg:flex flex-col gap-8 mr-4 rounded-xl">
             {todos.map((todo) => (
                 <NavLink
                     key={todo.id}
@@ -15,8 +15,8 @@ const ItemTodoList = ({ todos }) => {
                             ? `navlink-list active-navlink-list`
                             : `${
                                   todo.done
-                                      ? 'bg-green-500/70 hover:bg-green-500 transition-all duration-500'
-                                      : 'bg-red-500/70 hover:bg-red-500 transition-all duration-500'
+                                  ? 'bg-green-500 shadow-md hover:bg-blue-500 transition-all duration-500'
+                                  : 'bg-red-500 shadow-md hover:bg-blue-500 transition-all duration-500'
                               } navlink-list`
                     }
                 >

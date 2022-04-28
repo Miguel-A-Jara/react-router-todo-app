@@ -4,10 +4,18 @@ import DeleteTodoButton from "../DeleteTodoButton";
 import TodoTitle from "./TodoCardTitle";
 import TodoCardSymbol from "./TodoCardSymbol";
 import TodoCardParagraph from "./TodoCardParagraph";
+import { motion } from "framer-motion";
 
-const TodoCard = ({ todo }) => {
+
+const TodoCard = ({ todo, idx }) => {
     return (
-        <li className="p-4 my-4 text-white flex flex-wrap justify-center animate__animated animate__fadeIn">
+        <motion.li
+            //For each card, we add the index to make the transition slower
+            transition={{ duration: (0.5 + (idx * 0.05)) }}
+            initial={{ scale: 0, opacity: 0 }} 
+            animate={{ scale: 1, opacity: 1 }} 
+            exit={{ scale: 0, opacity: 0 }}
+            className="p-4 my-4 text-white flex flex-wrap justify-center animate__animated animate__fadeIn">
             <TodoTitle todo={todo} />
             <TodoCardSymbol todo={todo} />
 
@@ -18,7 +26,7 @@ const TodoCard = ({ todo }) => {
                     <UpdateTodoButton todo={todo} />
                 </div>
             </div>
-        </li>
+        </motion.li>
     );
 };
 

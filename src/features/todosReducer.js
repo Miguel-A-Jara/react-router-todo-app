@@ -7,7 +7,7 @@ export const todosSlice = createSlice({
     initialState: { value: initialState },
     reducers: {
         addTodo: (state, action) => {
-            state.value.push({
+            state.value.unshift({
                 id: new Date().getTime(),
                 done: false,
                 ...action.payload

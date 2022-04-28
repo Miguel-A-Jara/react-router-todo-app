@@ -12,18 +12,20 @@ const TodoFormInputs = ({ handleSubmitForm, todoForm, setTodoForm, formVal }) =>
             >
                 <label for="title" className="form-label">Title</label>
                 <input
-                    id="title"
+                    id="title" autoComplete="off"
                     type="text" value={todoForm.todoTitle} placeholder="Title" className="form-input lg:font-bold" maxLength="25"
                     onChange={(e) =>
                         setTodoForm({ ...todoForm, todoTitle: e.target.value })}
                 />
+
                 <label for="descri" className="form-label">Description</label>
                 <textarea
-                    id="descri"
+                    id="descri" autoComplete="off"
                     value={todoForm.todoDescri} placeholder="Description" className="form-input text-center lg:font-bold" maxLength="200"
                     onChange={(e) =>
                         setTodoForm({ ...todoForm, todoDescri: e.target.value })}
                 />
+
                 <label for="date" className="form-label">Date</label>
                 <input
                     id="date"
@@ -31,6 +33,7 @@ const TodoFormInputs = ({ handleSubmitForm, todoForm, setTodoForm, formVal }) =>
                     onChange={(e) =>
                         setTodoForm({ ...todoForm, date: e.target.value })}
                 />
+                
                 <button
                     className="bg-indigo-500 hover:bg-white text-white hover:text-indigo-500 
                     p-2 rounded-full mx-auto block text-3xl lg:text-5xl transition-all duration-500 shadow-lg shadow-indigo-500"
