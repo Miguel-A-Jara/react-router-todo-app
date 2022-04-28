@@ -1,6 +1,6 @@
-import React from "react";
-import TodoForm from "./TodoForm/TodoForm";
-import TodoList from "./TodoList";
+import React from 'react';
+import TodoForm from './TodoForm/TodoForm';
+import TodoList from './TodoList';
 
 const MainTodoScreen = () => {
     return (

@@ -29,9 +29,8 @@ const TodoForm = () => {
     };
 
     return (
-        <div className="w-full md:w-3/4 lg:w-1/2 order-1 lg:order-2 h-fit lg:min-h-screen p-4 mx-auto bg-black/20 
-        flex items-center justify-center">
-            <div>
+        <div className="w-full lg:w-1/2 order-1 lg:order-2 min-h-screen lg:p-4 flex items-center justify-center bg-black/70">
+            <div className='w-full'>
                 <h2
                     className="bg-gradient-to-r from-cyan-500 to-indigo-500 text-center text-xl lg:text-7xl 
                     font-bold text-white px-8 py-4 mx-4 rounded-t-2xl"

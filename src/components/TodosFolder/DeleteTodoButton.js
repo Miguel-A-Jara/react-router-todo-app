@@ -1,7 +1,8 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import { remTodo } from "../../features/todosReducer";
-import { FaTrash } from "react-icons/fa";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { remTodo } from '../../features/todosReducer';
+import { FaTrash } from 'react-icons/fa';
 
 const DeleteTodoButton = ({ todo }) => {
     const dispatch = useDispatch();
@@ -15,6 +16,10 @@ const DeleteTodoButton = ({ todo }) => {
             <FaTrash />
         </button>
     );
+};
+
+DeleteTodoButton.propTypes = {
+    todo: PropTypes.object.isRequired
 };
 
 export default DeleteTodoButton;

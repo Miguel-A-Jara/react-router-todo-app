@@ -24,5 +24,5 @@ root.render(
                 </MotionConfig >
             </HashRouter>
         </Provider>
-    </React.StrictMode>,
+    </React.StrictMode>
 );

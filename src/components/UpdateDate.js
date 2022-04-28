@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
-import { updateDate } from "../features/todosReducer";
+import React, { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { updateDate } from '../features/todosReducer';
+import PropTypes from 'prop-types';
 
-const UpdateDate = ({todo}) => {
+const UpdateDate = ({ todo }) => {
 
     const dispatch = useDispatch();
     const [date, setDate] = useState(todo);
@@ -11,8 +12,8 @@ const UpdateDate = ({todo}) => {
         setDate({
             ...todo,
             date: e.target.value
-        })
-    }
+        });
+    };
 
     useEffect(() => {
         dispatch(updateDate(date));
@@ -28,6 +29,10 @@ const UpdateDate = ({todo}) => {
             />
         </>
     );
+};
+
+UpdateDate.propTypes = {
+    todo: PropTypes.object.isRequired
 };
 
 export default UpdateDate;
